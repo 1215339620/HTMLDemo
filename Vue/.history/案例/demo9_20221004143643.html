@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document9</title>
+</head>
+<body>
+    <div id="app">
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../vue.js"></script>
+    <script>
+        Vue.component('my-one',{
+            template:'<p>hhhhhh</p>'
+        })
+        var vm=new Vue({
+            el:"#app",
+            mounted() {
+                axios.get('./data.json').then(response=>(console.log(response.data)));
+            }
+        })
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin: 30px 25px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 200px; height:280px;background:orange;padding:20px;margin: 0 auto;">
+        <p>跳楼大甩卖</p>
+        <p>原价：1999元</p>
+        <p>现价：99元</p>
+        <p>惊爆价！，快来抢购吧！</p>
+        <button>取消</button>
+        <button>支付</button>
+    </div>
+    <script>
+        document.getElementsByTagName('button')[1].onclick=function(){
+            let pay=window.confirm("您确认是否支付？");
+            if(pay){
+                location.href="paysuccess.html";
+            }
+        }
+    </script>
+</body>
+</html>

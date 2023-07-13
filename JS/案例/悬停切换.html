@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul,li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            overflow: hidden;
+        }
+        li{
+            height: 40px;
+            width: 100px;
+            background-color: white;
+            border: 1px solid rgb(188, 129, 18);
+            float: left;
+            line-height: 40px;
+            text-align: center;
+        }
+        div{
+            width: 406px;
+            height: 406px;
+            border: 1px solid rgb(188, 129, 18);
+        }
+        p{
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>mai</li>
+        <li>liang</li>
+        <li>li</li>
+        <li>zhang</li>
+    </ul>
+    <div>
+        <p style="display:block ;">麦高远</p>
+        <p>梁俊豪</p>
+        <p>李阳</p>
+        <p>张腾飞</p>
+    </div>
+    <script>
+        let li=document.getElementsByTagName('li');
+        let p=document.getElementsByTagName('p');
+        for (let i = 0; i < li.length; i++) {
+            li[i].onmouseover=function(){
+                li[i].style.backgroundColor="skyblue"
+                //先隐藏，再出现
+                for (let j = 0; j < p.length; j++) {
+                    p[j].style.display='none'
+                }
+                p[i].style.display='block';
+            }
+            li[i].onmouseout=function(){
+                li[i].style.backgroundColor="white"
+
+            }
+        }
+    </script>
+</body>
+</html>

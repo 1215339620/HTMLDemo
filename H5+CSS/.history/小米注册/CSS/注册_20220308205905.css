@@ -1,0 +1,36 @@
+body,p,ul,ol,dl,dt,h1,h2,h3,h4,h5,h6,dd{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+
+.left{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 375px;
+}
+.left img{
+    height: 100%;
+    width: 375px;
+}
+.right{
+    height: 100%;
+}

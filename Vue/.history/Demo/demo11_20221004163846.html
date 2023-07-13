@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app9">
+        <todo>
+            <todo-title slot="todo-title" :title="title"></todo-title>
+            <todo-item slot="todo"></todo-item>
+        </todo>
+    </div>
+
+    <script src="../vue.js"></script>
+    <script>
+        Vue.component("todo", {
+            template: `<div>
+                            <slot name="todo-title"></slot>
+                            <ul>
+                                <slot name="todo-items"></slot>
+                            </ul>
+                        </div>`
+        })
+        Vue.component("todo-title",{
+            props:['title'],
+            template:'<div>{{title}}</div>'
+        })
+        Vue.component("todo-item",{
+            props:['item'],
+            template:'<li>{{item}}</li>'
+        })
+        var vm = new Vue({
+            el: '#app9',
+            data: {
+                title: 'todo',
+                todoItems: ['java', 'go', 'html']
+            }
+        })
+    </script>
+</body>
+
+</html>

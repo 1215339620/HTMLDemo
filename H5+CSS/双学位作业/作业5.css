@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+}
+ul{
+    list-style: none;
+}
+div.box{
+    border: 8px solid green;
+}
+div.box h1 a{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+table tr.first{
+    background-color: green;
+    color: white;
+    
+}
+div.box ul li p span{
+    color: blue;
+}
+div.box ul li p.text1{
+    color: green;
+    text-indent: 2em;
+}
+div.box ul li p.text2{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "宋体";
+    text-indent: 2em;
+}
+div.box ul li p.text3{
+    text-decoration: underline;
+    text-indent: 2em;
+}

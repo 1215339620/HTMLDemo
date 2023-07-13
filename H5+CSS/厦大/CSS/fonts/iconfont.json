@@ -1,0 +1,79 @@
+{
+  "id": "2849148",
+  "name": "厦大",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7939204",
+      "name": "方向中等箭头-向右",
+      "font_class": "arrow",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "1683595",
+      "name": "喇叭",
+      "font_class": "laba",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "5541416",
+      "name": "ico-显微镜",
+      "font_class": "ico-xianweijing",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "5699820",
+      "name": "icon_time",
+      "font_class": "icon-",
+      "unicode": "e708",
+      "unicode_decimal": 59144
+    },
+    {
+      "icon_id": "11372763",
+      "name": "定位",
+      "font_class": "dingwei",
+      "unicode": "e8c4",
+      "unicode_decimal": 59588
+    },
+    {
+      "icon_id": "11747132",
+      "name": "胶片",
+      "font_class": "jiaopian",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "18371230",
+      "name": "日历",
+      "font_class": "rili",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "19152723",
+      "name": "看书",
+      "font_class": "tubiao1",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "1719347",
+      "name": "地球",
+      "font_class": "diqiu",
+      "unicode": "e7b9",
+      "unicode_decimal": 59321
+    },
+    {
+      "icon_id": "1114",
+      "name": "网络",
+      "font_class": "wangluo",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

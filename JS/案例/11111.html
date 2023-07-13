@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //题目一 
+        // var a = 10;
+        // function test() {
+        //     console.log(a);
+        //     a = 100;
+        //     console.log(this.a);
+        //     var a;
+        //     console.log(a);
+        //     console.log(this.a);
+        // }
+        // test();
+        //题目二 
+        // var c = 100;
+        // var c;
+        // console.log(c);
+        // //题目三 
+        // function test() {
+        //     c = 11;
+        //     console.log(c);
+        // }
+        // test();
+        // console.log(c);
+        // //题目四 
+        // var n = 100;
+
+        // function foo() {
+        //     n = 200;
+        // }
+        // console.log(n);
+        // foo();
+       
+        // //题目五 
+        var a = 1;
+
+        function foo() {
+            console.log(a);
+        }
+
+        function bar() {
+            var a = 2;
+            foo();
+        }
+        bar();
+
+    </script>
+</body>
+
+</html>

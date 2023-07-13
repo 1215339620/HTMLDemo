@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            list-style: none;
+        }
+        table {
+            width: 100%;
+        }
+        tr {
+            display: flex;
+            justify-content: space-around;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <fieldset>
+            <legend>学生信息录入</legend>
+            <p>
+                <span>姓名：</span>
+                <input type="text" name="usernme" class="username">
+            </p>
+            <p>
+                <span>年龄：</span>
+                <input type="text" name="age" class="age">
+            </p>
+            <p>
+                <span>性别：</span>
+                <select name="sex" id="sex">
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+            </p>
+            <p>
+                <span>手机：</span>
+                <input type="text" name="phone" class="phone">
+            </p>
+            <p>
+                <button id="btn">提交</button>
+            </p>
+        </fieldset>
+        <table>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>手机</th>
+                    <th>删除</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        //1.添加   2.删除
+        let sex=document.getElementById('sex');
+        let btn=document.getElementById('btn');
+        let input=document.getElementsByTagName('input');
+        let tbody=document.getElementsByTagName('tbody')[0];
+        //定义数组
+        let stus=[];
+        
+        //提交，内容写入数组
+        btn.onclick=function(){
+            let content={name:input[0].value,age:input[1].value,sex:sex.value,phone:input[2].value}
+            stus.push(content);
+            //数组遍历
+            let tr='';
+            stus.forEach((item,index)=>{
+                tr+="<tr class='newTr';>"+
+                    "<td>"+item.name+"</td>"+
+                    "<td>"+item.age+"</td>"+
+                    "<td>"+item.sex+"</td>"+
+                    "<td>"+item.phone+"</td>"+
+                    "<td onclick='del("+index+")'>删除</td>"+
+                "</tr>";
+            });
+            tbody.innerHTML=tr;
+        }
+        //删除
+        function del(index){
+            //删除数组中信息
+            stus.splice(index,1);
+            //删除DOM元素
+            let ele=document.getElementsByClassName('newTr')[index];
+            tbody.removeChild(ele);
+        }
+        
+    </script>
+</body>
+</html>

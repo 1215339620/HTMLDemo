@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课堂练习</title>
+    <link rel="stylesheet" href="task1.css"/>
+    <style>
+        p.one{
+            color: blue;
+        }
+        #text{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 在“行内”把字体设为红色 -->
+    <div style="color: red;">
+        标签选择器
+    </div>
+
+    <!-- 用“内嵌”方法并使用“类选择器”把字体设为蓝色 -->
+    <p class="one">
+        类选择器1
+    </p>
+    <p class="one">
+        类选择器2
+    </p>
+
+    <!-- 用“内嵌”方法并使用“id选择器”把字体大小设为30px -->
+    <p id="text">
+        id选择器
+    </p>
+
+    <!-- 用“单独文件”方法并使用“嵌套选择器”把嵌套两个字设为红色 -->
+    <p>
+        我是<span>嵌套</span>选择器
+    </p>
+
+    <!-- 用“单独文件”方法并使用集体选择器把h1,h2标签字体设为绿色 -->
+    <h1>
+        集体选择器-标题1
+    </h1>
+    <h2>
+        集体选择器-标题2
+    </h2>
+</body>
+</html>

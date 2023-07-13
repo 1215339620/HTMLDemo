@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+    <style>
+        body{
+            align-items: center;
+            background-color: darkorchid;
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul,li{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            margin-left: 25%;
+            margin-top: 10%;
+            width: 900px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            border: 10px #fff solid;
+            box-shadow: 20px 30px 20px #000 ;
+        }
+        #images{
+            height: 500px;
+            width: 3600px;
+            padding: 0;
+            margin: 0;
+        }
+        #images li{
+            width: 900px;
+            height: 500px;
+            position: absolute;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        #left,#right{
+            margin: 10px;
+            position: absolute;
+            opacity: 0.5;
+            top: 45%;
+            z-index: 10;
+            font-size: 300%;
+            height: 64px;
+            width: 64px;
+            background-color: grey;
+            border-radius: 65px;
+        }
+        #left a,#right a{
+            color: red;
+        }
+        #left:hover,#right:hover{
+            opacity: 0.9;
+        }
+        #left{
+            text-align: center;
+            left: 10px;
+        }
+        #right{
+            text-align: center;
+            right: 10px;
+        }
+        .btn{
+            position:absolute;
+            bottom: 10px;
+            left: 45%;
+        }
+        .btn #b0,#b1,#b2{
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 70px;
+            opacity: 0.5;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .on{
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: 500px;
+            transition: 1s;
+        }
+        .out{
+            opacity: 0;
+            display: block;
+            width: 100%;
+            height: 500px;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul id="images">
+            <li id="img0" class="on"><img src="./l1.jpg" alt=""></li>
+            <li id="img1" class="out"><img src="l2.jpg" alt=""></li>
+            <li id="img2" class="out"><img src="l3.jpg" alt=""></li>
+        </ul>
+        <div id="left">
+            <a href="#lajfol"><</a>
+        </div>
+        <div id="right">
+            <a href="#oijsjgoij">></a>
+        </div>
+        <div class="btn">
+            <ul>
+                <li id="b0">1</li>
+                <li id="b1">2</li>
+                <li id="b2">3</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        //记录当前位置
+        var curImg=0;
+        //获取照片个数
+        var imgs=document.getElementById('images').getElementsByTagName('li').length;
+        //选中按钮
+        var b=document.getElementById('b'+curImg);
+        b.setAttribute("style","background-color:grey");
+
+        var time =setInterval(bannerImg,3000);
+        //轮播
+        function bannerImg(){
+            if (curImg<imgs-1) {
+                curImg++;
+            }else{
+                curImg=0;
+            }
+            document.getElementById('img'+curImg).setAttribute('class','on');
+            if (curImg==0) {
+                document.getElementById('img'+2).setAttribute('class','out');
+            }else{
+                document.getElementById('img'+(curImg-1)).setAttribute('class','out');
+            }
+
+            for (let i = 0; i < 3; i++) {
+                document.getElementById('b'+i).setAttribute('style',"background-color:white");
+                
+            }
+            document.getElementById('b'+curImg).setAttribute('style',"background-color:grey");
+                
+        }
+        //点击下一张
+        document.getElementById('right').onclick=function next(){
+            //清除定时器
+            clearInterval(time);
+            bannerImg();
+            time =setInterval(bannerImg,3000);
+        }
+        //点击上一张
+        document.getElementById('left').onclick=function befor(){
+            //清除定时器
+            clearInterval(time);
+            if(curImg==0){
+                curImg=imgs-1;
+            }else{
+                curImg--;
+            }
+            
+            document.getElementById('img'+curImg).setAttribute('class','on');
+            if (curImg==imgs-1) {
+                document.getElementById('img'+0).setAttribute('class','out');
+            }else{
+                document.getElementById('img'+(curImg+1)).setAttribute('class','out');
+            }
+
+            for (let i = 0; i < 3; i++) {
+                document.getElementById('b'+i).setAttribute('style',"background-color:white");
+                
+            }
+            document.getElementById('b'+curImg).setAttribute('style',"background-color:grey");
+            time =setInterval(bannerImg,3000);
+        }
+    </script>
+</body>
+</html>

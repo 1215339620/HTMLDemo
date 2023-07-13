@@ -1,0 +1,67 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2895715 */
+  src: url('iconfont.woff2?t=1636464145536') format('woff2'),
+       url('iconfont.woff?t=1636464145536') format('woff'),
+       url('iconfont.ttf?t=1636464145536') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-15tianwuliyoutuihuo:before {
+  content: "\e606";
+}
+
+.icon-editor2:before {
+  content: "\e62e";
+}
+
+.icon-dingwei:before {
+  content: "\e603";
+}
+
+.icon-7tiantuihuanhuo:before {
+  content: "\e620";
+}
+
+.icon-basesalescardPackage:before {
+  content: "\e629";
+}
+
+.icon-xinxi:before {
+  content: "\e61b";
+}
+
+.icon-bg-right:before {
+  content: "\e64c";
+}
+
+.icon-shoppingcart:before {
+  content: "\eb86";
+}
+
+.icon-icon-arrow-right2:before {
+  content: "\e667";
+}
+
+.icon-right-1-copy:before {
+  content: "\e61f";
+}
+
+.icon-changyongtubiao_yonghusousuo:before {
+  content: "\e60b";
+}
+
+.icon-xiaomigouwuche:before {
+  content: "\e601";
+}
+
+.icon-xiaomigouwuche1:before {
+  content: "\e600";
+}
+

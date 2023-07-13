@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+        button{
+            position: relative;
+            top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="Box">
+    </div>
+    <button>开始</button>
+    <button>停止</button>
+    <script>
+        let btn=document.getElementsByTagName('button');
+        let div=document.getElementById('Box');
+        let body=document.body;
+        let num=0;
+        let timer=null;
+        let speed=5;
+        btn[0].onclick=function(){
+            if(timer==null){
+                timer=setInterval(()=>{
+                    num+=speed;
+                    div.style.left=num+'px';
+                    if (num>=body.offsetWidth-div.offsetWidth||num<=0) {
+                        speed=-speed;
+                    }
+                },100);
+            }
+        }
+        btn[1].onclick=function(){
+            clearInterval(timer);
+            timer=null;
+        }
+    </script>
+</body>
+</html>

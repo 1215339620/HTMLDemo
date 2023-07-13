@@ -1,0 +1,20 @@
+{
+
+    "desc": ".json文件里面不允许有注释，得单独开key-value，/* 使用之前要安装npm install --global prettier */",
+  
+    "singleQuoteDesc": "//使用单引号",
+  
+    "singleQuote": true,
+  
+    "semiDesc": "//在语句结尾处不打印分号",
+  
+    "semi": false,
+  
+    "trailingCommaDesc": "//禁止随时添加逗号",
+  
+    "trailingComma": "none"
+  
+  }
+  ————————————————
+  版权声明：本文为CSDN博主「木木木华」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+  原文链接：https://blog.csdn.net/catascdd/article/details/108661178

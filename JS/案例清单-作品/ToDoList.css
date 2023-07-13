@@ -1,0 +1,238 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: block;
+    color: rgb(0, 0, 0);
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a,a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.container{
+    padding: 0 25px;
+    margin: 20px auto;
+    width: 1200px;
+    height: auto;
+    position: relative;
+    border-radius: 25px;
+    border: 3px rgb(0, 0, 0) solid;
+    border-bottom: none;
+    background-size: cover;
+    background-color: skyblue;
+    box-shadow: 20px 20px 20px rgb(103, 102, 102) ;
+}
+.header{
+    margin: bottom 20px ;
+}
+.header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header h1 img{
+    width: 52px;
+    align-items: center;
+
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2 img{
+    width: 40px;
+    align-items: center;
+
+}
+.header .day{
+    display: flex;
+    align-items: center;
+}
+.header .right-header{
+    float: right;
+    position: absolute;
+    top: 40px;
+    right: 55px;
+}
+.right-header .back-img{
+    margin-left: 73px;
+    margin-top: 20px;
+}
+
+.right-header .back-img button{
+    height: 30px;
+}
+.right-header .carousel{
+    margin-top: 20px;
+    margin-left: -32px;
+    width: 200px;
+    height: 62.5px;
+    overflow: hidden;
+    position: relative;
+    border: 2px rgb(255, 0, 187) solid;
+}
+.right-header .carousel ul{
+    width: 800px;
+    position: relative;
+}
+.right-header .carousel ul li{
+    float: left;
+}
+.right-header .carousel img{
+    width: 100px;
+    height: 62.5px;
+}
+.new-content{
+    display: flex;
+    align-items: center;
+}
+.new-task{
+    border-bottom: 1px solid rgb(192, 192, 192);
+    margin-bottom: 20px;
+}
+.new-task #img-add{
+    height: 30px;
+    width: 30px;
+    margin-right: 20px;
+}
+.new-task #input{
+    vertical-align: middle;
+    border: none;
+    border-radius: 20px;
+    width: 750px;
+    height: 50px;
+    font-size: 15px ;
+}
+.new-task #add{
+    margin-left: 10px;
+    height: 30px;
+    width: 55px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.todo-list{
+    width: 49%;
+    float: left;
+    position: relative;
+    border-radius: 10px;
+    border: 2px #000000 solid;
+    /* box-shadow: 10px 10px 10px rgb(103, 102, 102) ; */
+    margin-bottom: 20px;
+}
+.done-list{
+    width: 49%;
+    float: right;
+    position: relative;
+    border-radius: 10px;
+    border: 2px #000000 solid;
+    /* box-shadow: 10px 10px 10px rgb(103, 102, 102) ; */
+    margin-bottom: 20px;
+}
+.todo-item{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    animation: sli 1s cubic-bezier(0.46, 0.03, 0.52, 0.96) 1;
+}
+.todo-content{
+    padding-left: 35px;
+    width: 270px;
+}
+.todo-item .todo-content .todo-text{
+    font-size: 20px;
+}
+.todo-content .todo-type{
+    font-size: 12px;
+    color:rgb(167, 163, 163) ;
+}
+.circle,.sign{
+    display: flex;
+    /* 居中显示 */
+    align-items: center;
+}
+.circle{
+    margin-left: 5px;
+    float: left;
+    position: absolute;
+    top: 17px;
+}
+.timing,.delay{
+    font-size: 14px;
+    margin-right: 9px;
+}
+.delay input{
+    width: 20px;
+}
+.sign{
+    float: right;
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.todo-item img{
+    height: 25px;
+    cursor: pointer;
+}
+.todo-item .sign img{
+    margin-right: 16px;
+}
+
+.todo-example{
+    display: none;
+}
+
+
+/* 完成数，未完成数 */
+.todo-number{
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(228, 228, 228);
+}
+.done-number{
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgb(228, 228, 228);
+}
+@keyframes sli{
+    0%{
+        left: -300px;
+    }
+    100%{
+        left:0px
+    }
+}
+
+
+
+.clearfix::before {
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}

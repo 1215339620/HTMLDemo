@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../vue.js"></script>
+</head>
+
+<body>
+    <div id="app-3">
+        <p :style="styleObject">现在你看到我了</p>
+    </div>
+    <div v-bind:style="styleObject"></div>
+    <script>
+        var vm=new Vue({
+            data: {
+            styleObject: {
+                color: 'red',
+                fontSize: '13px'
+            }
+        }
+        })
+    </script>
+</body>
+
+</html>

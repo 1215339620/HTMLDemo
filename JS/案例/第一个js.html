@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function displayDate(){
+            document.getElementById("demo").innerHTML=Date();
+        }
+        var arr=[1,2,"a","b"];
+
+        var age=[12,3,12,3,12,3,12,31,23,123];
+            age.forEach(function(value){
+            console.log(value)}
+            )
+        function abs(x){
+            if(x>=0){
+                return x;
+            }else{
+                return -x;
+            }
+        }
+
+        function aaa(a,b,...rest){
+            console.log("a="+a);
+            console.log("b="+b);
+            console.log(rest);
+        }
+    </script>
+</head>
+<body>
+    <h1>我的第一个js程序</h1>
+    <p id="demo">这是一个段落</p>
+
+    <button type="button" onclick="displayDate()">显示日期</button>
+</body>
+</html>

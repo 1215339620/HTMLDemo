@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../案例清单-作品/ToDoList.css">
+    <title>JavaScript小清单</title>
+</head>
+<body>
+    <div class="container clearfix">
+        <div class="header">
+            <h1><img src="photos/待办事项.png" alt=""> 待办事项</h1>
+            <div class="left-header">
+                <div class="day">
+                    <h2>现在时间：</h2>
+                    <p id="data">2022年6月15日  周三 &nbsp; </p>
+                    <p class="time">08:00:00</p>
+                </div>
+            </div>
+            <div class="right-header">
+                <div class="topic">
+                    选择主题： &nbsp; &nbsp; 
+                    <select name="选择主题" id="select">
+                        <option value="skyblue" class="skyblue">天蓝色</option>
+                        <option value="white" class="white">白色</option>
+                        <option value="grey" class="grey">灰色</option>
+                        <option value="pink" class="pink">粉色</option>
+                        <option value="yellowgreen" class="yellowgreen">黄绿色</option>
+                    </select>
+                </div>
+                <div class="back-img">
+                    <button id="changeBackImg">
+                        切换背景图片
+                    </button>
+                </div>
+                <div class="carousel">
+                    <ul class="clearfix" id="scroll">
+                        <li><img src="photos/b1.jpg" alt=""></li>
+                        <li><img src="photos/b2.jpg" alt=""></li>
+                        <li><img src="photos/b3.jpg" alt=""></li>
+                        <li><img src="photos/b4.jpg" alt=""></li>
+                        <li><img src="photos/b1.jpg" alt=""></li>
+                        <li><img src="photos/b2.jpg" alt=""></li>
+                        <li><img src="photos/b3.jpg" alt=""></li>
+                        <li><img src="photos/b4.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        <div class="new-task">
+            <h3>新任务</h3>
+            <div class="new-content">
+                <img id="img-add" src="photos/add1.png" alt="">
+                <input id="input" type="text"  placeholder="请输入新的待办事项">
+                <button id="add">添加</button>
+            </div>
+        </div>
+        <div class="todo-list">
+            <h2><img src="photos/未完成.png" alt=""> 未完成任务</h2>
+            <div class="todo-number"></div>
+            <hr>
+
+            <div class="todo-main">
+            </div>
+        </div>
+        <div class="done-list">
+            <h2><img src="photos/已完成.png" alt="">已完成任务</h2>
+            <div class="done-number"></div>
+            <hr>
+
+            <div class="done-main"></div>
+        </div>
+    </div>
+    <div class="todo-example">
+        <div class="todo-item">
+            <div class="circle">
+                <img class="unaccomplished" src="photos/circle1.png" alt="">
+            </div>
+            <div class="todo-content">
+                <div contenteditable="true" class="todo-text">下班去拿快递</div>
+                
+                <div class="todo-type">任务</div>
+            </div>
+            <div class="timing" id="ding" name="ding">定时
+                <select name="timing" id="timing">
+                    <option value="null" class="null" >请选择</option>
+                    <option value="1" class="1min" >1分钟 </option>
+                    <option value="5" class="5min">5分钟</option>
+                    <option value="10" class="10min">10分钟</option>
+                    <option value="60"   class="1h">1小时 </option>
+                    <option value="120"   class="2h">2小时 </option>
+                </select>
+            </div>
+            <div class="delay" id="yan">延时
+                <input type="text" id="delayTime" disabled>分
+            </div>
+            <div class="sign">
+                <img class="star1" src="photos/important1.png" alt="">
+                <img class="del" src="photos/删除.png" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <script src="../案例清单-作品/ToDoList.js"></script>
+</body>
+</html>

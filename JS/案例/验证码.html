@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #checkCode{
+            background-color:rgb(170, 180, 189);
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 50px;
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="v_code">
+        <div class="code_show">
+            <span id="checkCode">adf34y</span>
+            <a id="linkbt">看不清换一张</a>
+        </div>
+        <div class="input_code">
+            <label for="inputCode">验证码：</label>
+            <input type="text" id="inputCode">
+            <span id="text_show"></span>
+        </div>
+        <button id="Btn1">确定</button>
+    </div>
+    <script>
+        //6位数，随机生成6位，内容必须是0-9 a-f字符串
+    
+    window.onload=function(){
+        var res=getCode();
+        function getCode(){
+            var arr=['0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r'];
+            var str='';
+            for (var i = 0; i < 6; i++) {
+                var num= Math.round(Math.random()*(27-0)+0);
+                str+=arr[num];
+            }
+            return str;
+        }
+        document.getElementById('checkCode').innerHTML=res;
+        //点击换验证码
+        document.getElementById('linkbt').onclick=function(){
+            document.getElementById('checkCode').innerHTML=getCode();
+        }
+        //对比验证码
+        document.getElementById('Btn1').onclick=function(){
+            var code=document.getElementById('checkCode').innerText;
+            var inputCode=document.getElementById('inputCode').value;
+            if(code!=inputCode){
+                alert("验证码输入错误！!!!!!!!!");
+                document.getElementById('inputCode').value='';
+                return false;
+            }else{
+                alert("验证码输入正确！")
+            }
+        }
+    }
+    </script>
+</body>
+</html>

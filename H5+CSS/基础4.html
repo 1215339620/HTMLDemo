@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+
+</head>
+
+<body>
+  <canvas id="myCanvas" width="200" height="100"
+  style="border: 1px  solid rgb(0, 81, 255);">您的浏览器不支持HTML5 canvas</canvas>　</canvas>
+  <canvas id="my" width="200" height="100"
+  style="border: 2px  solid rgb(6, 10, 19);">您的浏览器不支持HTML5 canvas</canvas>　</canvas>
+  <canvas id="myCa" width="200" height="100"
+  style="border: 1px  solid rgb(0, 81, 255);">您的浏览器不支持HTML5 canvas</canvas>　</canvas>
+  <canvas id="myCanv" width="200" height="100"
+  style="border: 1px  solid rgb(0, 81, 255);">您的浏览器不支持HTML5 canvas</canvas>　</canvas>
+ 
+<script>
+  var c=document.getElementById("myCanvas");
+  var ctx=c.getContext("2d");
+  ctx.fillStyle="#FF0000";
+  ctx.fillRect(0,0,150,75);
+
+  var c=document.getElementById("my");
+  var ctx=c.getContext("2d");
+  ctx.beginPath();
+  ctx.arc(95,50,40,0,2*Math.PI);
+  ctx.stroke();
+  var c=document.getElementById("myCa");
+var ctx=c.getContext("2d");
+ctx.font="30px Arial";
+ctx.fillText("Hello World",10,50);
+var c=document.getElementById("myCanv");
+var ctx=c.getContext("2d");
+ctx.font="30px Arial";
+ctx.strokeText("Hello World",10,50);
+</script>
+</body>
+</html>

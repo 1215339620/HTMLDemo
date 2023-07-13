@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 2000px;
+        }
+        .goTop{
+            width: 100px;
+            height: 100px;
+            background-color: aquamarine;
+            text-align: center;
+            line-height: 100px;
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h2>顶部</h2>
+        <div class="goTop">
+            返回
+        </div>
+    </div>
+
+    <script>
+        let div=document.getElementsByTagName('div');
+        window.onscroll=function(){
+            let res=document.body.scrollTop||document.documentElement.scrollTop;
+            if(res>=400){
+                div[1].style.display='block';
+                
+            }else{
+                div[1].style.display='none';
+            }
+        }
+        div[1].onclick=function(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>
+</body>
+</html>
