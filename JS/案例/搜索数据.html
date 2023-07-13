@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            max-width: 1920px;
+        }
+        .show{
+            display: none;
+            width: 306px;
+            height: 300px;
+            border: 1px solid #161515;
+            margin-left: 774px;
+        }
+        .main{
+            text-align: center;
+        }
+        #value{
+            height: 40px;
+            width: 300px;
+        }
+        #sub{
+            height: 46px;
+            width: 60px;
+           padding-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="search">
+            <input type="text" id="value" placeholder="请输入课程">
+            <input type="submit" id="sub">
+        </div>
+        <div class="show" id="show"></div>
+    </div>
+    <script>
+        let arr=['Java web','Java','HTML','CSS','Web','Vue','JavaScript'];
+        //当聚焦是，显示下拉框。失去焦点，隐藏下拉框
+        let input=document.getElementById('value');
+        let show=document.getElementById('show');
+        input.onkeyup=function(){
+            show.style.display='block';
+            let str='';
+            arr.forEach((item)=>{
+                let res= item.indexOf(input.value);
+                if(res!=-1){
+                    str+='<p>'+item+'</p>';
+                }
+            })
+            // console.log(str);
+            if (!str||!input.value) {
+                show.innerHTML='<p>'+'暂无结果'+'</p>';
+            }else{
+                show.innerHTML=str;
+            }
+            
+        }
+        input.onfocus=function(){
+            show.style.display='block';
+        }
+        input.onblur=function(){
+            show.style.display='none';
+            input.value='';
+        }
+    </script>
+</body>
+</html>

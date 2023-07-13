@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p class="m" onclick="this.innerHTML='呜呼，起飞！'">准备起飞</p>
+    <script>
+        class Mai{
+            constructor(name,year){
+                this.name=name;
+                this.year=year;
+            }
+            age(){
+                let date=new Date();
+                return date.getFullYear()-this.year;
+            }
+        }
+        let mai =new Mai("麦高远",2001)
+        document.getElementById("demo").innerHTML="麦"+mai.age()+"岁了。";
+        
+    </script>
+</body>
+</html>

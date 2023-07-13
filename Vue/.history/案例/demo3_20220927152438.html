@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo3</title>
+</head>
+
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="item in items">
+                {{item.name}}
+            </li>
+        </ul>
+        <ul>
+            <li v-for="item in object">
+                {{item}}
+            </li>
+        </ul>
+        <ul>
+            <li v-for="(index,item) in object">
+                {{index+1}}. {{item.va}}
+            </li>
+        </ul>
+        <ul>
+            <li v-for="(item,index,key) in object">
+                {{index+1}}. {{key}}:{{item}}
+            </li>
+        </ul>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        var v = new Vue({
+            el: "#app",
+            data: {
+                items: [{
+                        name: 'javascript'
+                    },
+                    {
+                        name: 'Vue'
+                    }
+                ],
+                object: {
+                    title: 'How to do lists in Vue',
+                    author: 'Jane Doe',
+                    publishedAt: '2016-04-10'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

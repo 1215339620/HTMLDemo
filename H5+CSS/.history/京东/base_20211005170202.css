@@ -1,0 +1,14 @@
+.w{
+    width: 1190px;
+    margin: 0 auto;
+}
+header{
+    height: 80px;
+    background-color: #020000;
+}
+html,body{
+    height:100%;
+    padding: 0;
+    margin: 0;
+}
+.

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app9">
+
+    </div>
+
+    <script src="../vue.js"></script>
+    <script>
+        Vue.component("todo", {
+            template: `<div>
+                            <slot name="todo-title"></slot>
+                            <ul>
+                                <slot name="todo"></slot>
+                            </ul>
+                        </div>`
+        })
+        var vm = new Vue({
+            el: '#app9',
+            data: {
+                title: 'todo',
+                todoItems: ['java', 'go', 'html']
+            }
+        })
+    </script>
+</body>
+
+</html>

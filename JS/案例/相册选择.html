@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul,li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img{
+        width:auto;
+        height:auto;
+        max-width:100%; 
+        max-height:100%;
+        }
+        
+        .big{
+            height: 40px;
+            width: 100px;
+            background-color: white;
+            border: 1px solid rgb(188, 129, 18);
+            float: left;
+            line-height: 40px;
+            text-align: center;
+        }
+        div{
+            width: 406px;
+            height: 406px;
+            border: 1px solid rgb(188, 129, 18);
+        }
+        p{
+            height: 100px;
+            width: 100px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+        <img src="../../H5+CSS/华为/hwcloud-promotion-10-3.jpg" alt="">
+    </div>
+    <div>
+        <img src="../../H5+CSS/华为/hwcloud-promotion-10-3.jpg" alt="">
+        <img src="../../H5+CSS/华为/vmall-nova9-2.jpg" alt="">
+        <img src="../../H5+CSS/华为/菜单.png" alt="">
+        <img src="../../H5+CSS/华为/huawei_logo.png" alt="">
+    </div>
+    <script>
+        let imgs=document.getElementsByTagName('img');
+        let p=document.getElementsByTagName('p');
+        for (let i = 1; i < imgs.length; i++) {
+            imgs[i].onmousemove=function(){
+                imgs[0].src=this.src;
+
+            }
+        }
+    </script>
+</body>
+</html>

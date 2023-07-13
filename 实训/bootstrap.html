@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+    </script>
+    <style>
+        .jumbotron{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1>8C318成员简介</h1>
+        <p>这是优秀的318！！</p>
+    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>地址</th>
+            <th>操作</th>
+        </tr>
+        <tr class="success">
+            <td>1</td>
+            <td>麦高远</td>
+            <td>22</td>
+            <td>洛阳</td>
+            <td>
+                
+                <button class="btn btn-success" id="right"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                <button class="btn btn-danger" id="di"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+            </td>
+        </tr>
+        <tr class="success">
+            <td>2</td>
+            <td>王楚恂</td>
+            <td>22</td>
+            <td>商丘</td>
+            <td>
+                
+                <button class="btn btn-success" id="right"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                <button class="btn btn-danger" id="di"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+            </td>
+        </tr>
+        <tr class="success">
+            <td>3</td>
+            <td>吕亚轲</td>
+            <td>22</td>
+            <td>周口</td>
+            <td>
+                
+                <button class="btn btn-success" id="right"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                <button class="btn btn-danger" id="di"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+            </td>
+        </tr>
+        <tr class="success">
+            <td>4</td>
+            <td>李西奇</td>
+            <td>19</td>
+            <td>周口</td>
+            <td>
+                
+                <button class="btn btn-success" id="right"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                <button class="btn btn-danger" id="di"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+            </td>
+        </tr>
+        <tr class="success">
+            <td>5</td>
+            <td>卢申澳</td>
+            <td>22</td>
+            <td>商丘</td>
+            <td>
+                
+                <button class="btn btn-success" id="right"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                <button class="btn btn-danger" id="di"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+            </td>
+        </tr>
+        <tr class="success">
+            <td>6</td>
+            <td>李林飞</td>
+            <td>22</td>
+            <td>周口</td>
+            <td>
+                
+                <button class="btn btn-success" id="right"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                <button class="btn btn-danger" id="di"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+            </td>
+        </tr>
+        <tr class="success">
+            <td>7</td>
+            <td>王兴祖</td>
+            <td>22</td>
+            <td>驻马店</td>
+            <td>
+                
+                <button class="btn btn-success" id="right"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                <button class="btn btn-danger" id="di"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+            </td>
+        </tr>
+        <tr class="success">
+            <td>8</td>
+            <td>薛连通</td>
+            <td>22</td>
+            <td>新乡</td>
+            <td>
+                
+                <button class="btn btn-success" id="right"><span class="glyphicon glyphicon-pencil"></span> 编辑</button>
+                <button class="btn btn-danger" id="di"><span class="glyphicon glyphicon-trash"></span> 删除</button>
+            </td>
+        </tr>
+    </table>
+    <script>
+        var di = document.getElementById("di")
+        var right = document.getElementById("right")
+        di.onclick = function () {
+            alert('太正确了');
+        }
+        right.onclick = function () {
+            alert('你看人真不准');
+        }
+    </script>
+</body>
+
+</html>

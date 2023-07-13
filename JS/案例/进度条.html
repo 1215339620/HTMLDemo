@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .out{
+            width: 400px;
+            margin-bottom: 30px;
+            border: 1px solid red;
+        }
+        .in{
+            width: 0px;
+            height: 40px;
+            background-color: #f0f;
+            text-align: center;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+        <div class="in">
+            <span>0</span><span>%</span>
+        </div>
+    </div>
+    <button id="btn">安装</button>
+
+    <script>
+        let btn=document.getElementById('btn');
+        let div=document.getElementsByTagName('div');
+        let span=document.getElementsByTagName('span');
+        var m=null;
+        btn.onclick=function(){
+            let num=0;
+            if (m==null) {
+                m=setInterval(()=>{
+                num+=10;
+                div[1].style.width=num+'px';
+                span[0].innerHTML=Math.ceil((num*100)/400)
+                if (num==400) {
+                clearInterval(m);
+                }
+            },100);
+            }
+            
+            
+            
+        }
+    </script>
+</body>
+</html>

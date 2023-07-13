@@ -1,0 +1,574 @@
+body {
+    padding-top: 42px;
+    background: #fff;
+    font: 14px/1.5 "Microsoft YaHei", Tahoma, "simsun", sans-serif;
+    color: #323235;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto
+}
+
+body,
+dl,
+dd,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+div {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #363636;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    border: 0;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.head {
+    position: absolute;
+    left: 0;
+    top: 42px;
+    width: 100%;
+    min-width: 1300px;
+    height: 84px;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.header {
+    position: relative;
+    margin: 419px auto 0;
+    width: 1200px;
+    height: 115px;
+    margin-top: 503px;
+    background: url(../案例/images/bg_header.png) no-repeat;
+}
+
+/* 手风琴 */
+.accordion {
+    width: 732px;
+    padding: 8px 20px 0;
+    color: #a6afbc;
+    float: left;
+    position: relative;
+}
+
+.accordion .hero-list {
+    margin-top: 8px;
+
+}
+
+.accordion .hero-list li {
+    float: left;
+    display: inline;
+    position: relative;
+    margin-right: 10px;
+    width: 69px;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.accordion .hero-list li a {
+    display: block;
+    position: relative;
+    width: 69px;
+    height: 69px;
+}
+
+.accordion .hero-list li a img {
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.accordion .hero-list li .large {
+    opacity: 0;
+}
+
+.accordion .hero-list .active {
+    width: 224px;
+}
+
+.accordion .hero-list .active a {
+    width: 224px;
+}
+
+.accordion .hero-list .active .small {
+    opacity: 0;
+}
+
+.accordion .hero-list .active .large {
+    opacity: 1;
+}
+
+/* 手风琴 */
+.accordion .more {
+    top: 10px;
+    position: absolute;
+    right: 15px;
+    line-height: 15px;
+    padding: 30px 10px 10px;
+    color: #626a7a;
+}
+
+.accordion .more:hover {
+    color: #6595c2;
+}
+
+.login {
+    float: left;
+    width: 408px;
+    padding: 12px 10px;
+    position: relative;
+}
+
+.login .left {
+    top: -5px;
+    left: 10px;
+    width: 106px;
+    height: 120px;
+    position: absolute;
+    display: block;
+    background-position: -110px -174px;
+
+}
+
+.spr {
+    background: url(../案例/images/spr.png) no-repeat;
+}
+
+.login .left img {
+    margin: 24px 0 0 15px;
+    border-radius: 10px;
+}
+
+.login .left .ico {
+    top: 81px;
+    left: 68px;
+    width: 21px;
+    height: 20px;
+    padding-left: 3px;
+    background-position: -331px -105px;
+    color: #ffffff;
+    position: absolute;
+}
+
+.login .right {
+    margin-top: 32px;
+    color: #b3bbc5;
+    width: 300px;
+    margin-left: 115px;
+    float: left;
+}
+
+.login .right p {
+    margin-bottom: 20px;
+}
+
+.login .right p a {
+    color: #8ea0b0;
+    margin-left: 10px;
+}
+
+/* 主页面 */
+.wrapper {
+    padding-top: 618px;
+    background: no-repeat center top;
+    position: relative;
+    min-width: 1280px;
+    background-image: url(../案例/images/background.jpg);
+}
+
+.mainContent {
+    width: 100%;
+    min-width: 1200px;
+    min-height: 620px;
+    height: auto;
+    margin: 0 auto;
+    background: url(../案例/images/bg.png) no-repeat center top;
+}
+
+.con-box {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.con-box .con-top {
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.con-box .con-top .pos {
+    height: 20px;
+    line-height: 20px;
+    color: #464547;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.icon {
+    background: url(../案例/images/sprite.png) no-repeat;
+    display: block;
+}
+
+.pos .t {
+    background-position: 0 -4px;
+    width: 18px;
+    height: 18px;
+    margin-right: 9px;
+    float: left;
+}
+
+.pos a {
+    text-decoration: underline;
+    margin-right: 8px;
+}
+
+.pos span {
+    margin-right: 8px;
+}
+
+.con-top .title {
+    margin-top: 50px;
+    padding-left: 25px;
+    font: bold 20px/22px '\5FAE\8F6F\96C5\9ED1';
+    background: url(../案例/images/icon_hero.png) no-repeat;
+}
+
+.con-top .nave {
+    margin-top: 20px;
+    height: 32px;
+    font-size: 16px;
+    border-bottom: 3px solid #D4D4D4;
+    border-radius: 0 0 3px 3px;
+}
+
+.con-top .nave li {
+    float: left;
+    width: 33%;
+    margin-bottom: -3px;
+    position: relative;
+}
+
+.con-top .nave li.first {
+    border-bottom: 3px solid #3589DD;
+    border-radius: 0 0 3px 3px;
+}
+
+.con-top .nave li.first a {
+    color: #3589DD;
+    font-weight: bold;
+}
+
+.con-top .nave li a {
+    display: block;
+    width: 100%;
+    line-height: 32px;
+    text-align: center;
+}
+
+.con-main {
+    margin-bottom: 50px;
+    padding: 35px 28px;
+    border: 2px solid #E8E8E8;
+    border-top: 0;
+    position: relative;
+}
+
+.con-main .type {
+    background-color: #EFEFEF;
+    border-radius: 5px;
+    color: #686869;
+}
+
+.type .type-left {
+    float: left;
+    width: 80px;
+    height: 106px;
+    text-align: center;
+    background-color: #2C88E2;
+    color: #fff;
+    border-radius: 5px 0 0 5px;
+}
+
+.type .type-left li {
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+}
+
+.type .cl {
+    float: left;
+    width: 900px;
+    padding: 16px 0;
+    height: 20px;
+    line-height: 21px;
+}
+
+.add {
+    display: flex;
+    width: 900px;
+    padding: 16px 0;
+    height: 20px;
+    line-height: 21px;
+}
+
+.add .name,
+.add .profession,
+.add button {
+
+    float: left;
+    margin-left: 80px;
+}
+
+.add .name p,
+.add .profession p {
+    float: left;
+}
+
+.add input {
+    width: 200px;
+}
+
+.add select {
+    width: 80px;
+}
+
+.add button {
+    height: 24px;
+}
+
+.cl li {
+    float: left;
+    padding-left: 15px;
+    min-width: 90px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cl li .select {
+    float: left;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 7px;
+    border: 1px solid #B3B3B3;
+    border-radius: 50px;
+    position: relative;
+}
+
+.cl .sel .select i {
+    background-color: #358ADD;
+}
+
+.select i {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+}
+
+.cl p {
+    float: left;
+    cursor: pointer;
+    line-height: 19px;
+}
+
+.type .search-box {
+    position: absolute;
+    top: 91px;
+    right: 60px;
+    border: 1px solid #D2D2D2;
+    padding: 10px;
+    height: 22px;
+    width: 220px;
+}
+
+.type .search-box input {
+    float: left;
+    border: none;
+    width: 80%;
+    height: 22px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #747475;
+    background: none;
+    outline: none;
+}
+
+.type .search-box a {
+    float: right;
+    padding-left: 10px;
+    width: 22px;
+    height: 22px;
+    border-left: 1px solid #D5D5D5;
+    background: url(../案例/images/search.png) no-repeat 12px center;
+    outline: none;
+}
+/* -------------------------------- */
+.searchList {
+    margin-top: 40px;
+}
+.searchList #clearSearch{
+    position: relative;
+    display: none;
+    top: -15px;
+}
+.searchHero {
+    margin-right: -50px;
+    overflow: hidden;
+}
+
+.searchHero li {
+    float: left;
+    width: 87px;
+    margin-right: 30px;
+}
+
+.searchHero li .example {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.searchHero li .example img.hero-img {
+    width: 83px;
+    height: 83px;
+    border: 2px solid #258DF2;
+    border-radius: 10px 0 10px 0;
+}
+.searchHero li .example #occupation{
+    position: absolute;
+    width: 20px;
+    top: 65px;
+    left: 2px;
+    background-color: white;
+}
+
+
+/* ----------------------------------- */
+.heroList {
+    margin-top: 40px;
+}
+
+.hero {
+    margin-right: -50px;
+    overflow: hidden;
+}
+
+.hero li {
+    float: left;
+    width: 87px;
+    margin-right: 30px;
+}
+
+.hero li .example {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+.hero li .example img.hero-img {
+    width: 83px;
+    height: 83px;
+    border: 2px solid #258DF2;
+    border-radius: 10px 0 10px 0;
+}
+.hero li .example .del{
+    position: absolute;
+    width: 20px;
+    top: 0px;
+    left: 86px;
+    cursor: pointer;
+}
+.hero li .example .change{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: skyblue;
+}
+.hero li .example .change .changeimg{
+    width: 15px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+.hero li .example #occupation{
+    position: absolute;
+    width: 20px;
+    top: 65px;
+    left: 2px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}

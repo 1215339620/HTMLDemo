@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 0px;
+    transition: all 0.3s ease-out 0s;
+    height: 120px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+}
+.logo
+{
+    height: 72px;
+    margin-top: 0px;
+    float: left;
+}

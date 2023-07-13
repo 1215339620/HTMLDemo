@@ -1,0 +1,87 @@
+body{
+    width: 1559px;
+    font-family: "微软雅黑","黑体","STHeiti","Microsoft YaHei";
+    font-size: 14px;
+    margin: 0px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+a,a:hover{
+	text-decoration: none;
+}
+img,a{
+	border: none;
+}
+ul,li{
+	padding: 0px;
+	list-style: none;
+	margin: 0px;
+}
+.clear{
+	clear: both;
+}
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 0px;
+    transition: all 0.3s ease-out 0s;
+    height: 120px;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+}
+.container{
+    width: 93%;
+    height: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.log{
+    width: 20%;
+    float: left;
+}
+.logo
+{
+    height: 72px;
+    margin-top: 30px;
+    margin-left: -1.2px;
+}
+.header .headyou{
+    transition: 0.5s;
+    height: 100%;
+    display: block;
+    float: right;
+}
+.header .headyou .headshang{
+    text-align: right;
+    font-size: 12px;
+    opacity: 0.8;
+    padding-right: 20px;
+}
+.headshang .headsz{
+    display: inline;
+    padding-right: 5px;
+}
+.headshang .headsz span{
+    display: inline-block;
+    padding: 25px 10px;
+    padding-bottom: 0px;
+}
+. 
+
+
+
+
+/* 最后 */
+.clearfix::before {
+    content: "";
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}

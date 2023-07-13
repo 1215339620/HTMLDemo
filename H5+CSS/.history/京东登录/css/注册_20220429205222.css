@@ -1,0 +1,596 @@
+body,p,ul,ol,dl,dt,h1,h2,h3,h4,h5,h6,dd{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    color: #666;
+    text-decoration: none;
+}
+a:hover {
+    color: #E4393C;
+    text-decoration: underline;
+}
+input{
+    border: none;
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+}
+body{
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #666;
+    background: #fff;
+}
+
+/* header */
+.header{
+    width: 990px;
+    margin: 0 auto;
+}
+.header .logo{
+    position: relative;
+    width: 300px;
+    margin: 10px 0;
+    height: 60px;
+    float: left;
+}
+.header .logo a{
+    color: #666;
+    text-decoration: none;
+}
+.header .logo a img{
+    border: 0;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.header .logo b{
+    display: block;
+    width: 110px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(../images/l-icon.png) no-repeat;
+}
+.header .h-right{
+    position: relative;
+    color: #999;
+    float: right;
+    top: 52px;
+    outline: rgb(109, 109, 109) none 0px;
+}
+
+.h-right b{
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    margin: 0 5px;
+    background: url(../images/q-icon.png) no-repeat;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.h-right:hover{
+    color: #E4393C;
+    text-decoration: underline;
+}
+/* 内容 */
+.nr{
+    clear: both;
+}
+.nr-top{
+    background: #fff8f0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.nr-top .nr-topn{
+    display: inline-block;
+    width: 90%;
+}
+.nr i{
+    background: url(../images/icon-tips.png);
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.nr-topn p{
+    vertical-align: middle;
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+}
+.nr-topn p a{
+    color: #333;
+}
+.nr-topn p a:hover{
+    text-decoration: underline;
+}
+.nr-zhu{
+    margin-top: 0;
+    position: relative;
+    height: 475px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    z-index: 5;
+}
+.nr-zhu .back{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 475px;
+    background-color: #FAFBFD;
+}
+.nr-zhu .back .back1{
+    width: 990px;
+    margin: 0 auto;
+}
+.nr-zhu .back1 .b2{
+    background: url(../images/background.png) 0px 0px no-repeat;
+    position: relative;
+    z-index: 3;
+    height: 475px;
+}
+.nr-zhu .denglu1{
+    width: 990px;
+    margin: 0 auto;
+}
+.nr-zhu .denglu{
+    float: right;
+    top: 10px;
+    position: relative;
+    z-index: 4;
+    background: #fff;
+    overflow: visible;
+    width: 346px;
+    height: 399.69px;
+}
+.denglu .dl-ding{
+    background: #fff8f0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.denglu .dl-ding .dl-dingn p{
+    vertical-align: middle;
+    color: #999;
+    font-size: 12px;
+    display: inline-block;
+}
+.denglu .dl-topl,.dl-topr{
+    width: 173px;
+}
+.denglu .dl-topl{
+    height: 54px;
+    font-size: 18px;
+    font-family: "microsoft yahei";
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    position: absolute;
+    background: #fff;
+    display: block;
+}
+.denglu .dl-topl a{
+    outline: rgb(109, 109, 109) none 0px;
+    width: 99%;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+.denglu .dl-topl a:hover{
+    font-weight: 700;
+    color: #e4393c;
+}
+.denglu .dl-topr{
+    right: 0;
+    height: 54px;
+    font-size: 18px;
+    font-family: "microsoft yahei";
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    position: absolute;
+    background: #fff;
+    display: block;
+}
+.denglu2 .denglu .dl-topl a{
+    width: 99%;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    font-weight: 700;
+    font-weight: 700;
+    color: #e4393c;
+}
+.denglu2 .denglu .dl-topr a{
+    width: 99%;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+}
+.denglu2 .denglu .dl-topr a:hover{
+    color: #e4393c;
+    font-weight: 700;
+}
+.denglu1 .denglu .dl-topr a{
+    width: 99%;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 18px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    font-weight: 700;
+    color: #e4393c;
+} 
+.denglu .dl-box{
+    width: 306px;
+    padding: 20px;
+}
+.denglu .dl-box .dl-boxs{
+    height: 35px;
+    display: block;
+    width: 306px;
+    overflow: visible;
+}
+.denglu .dl-box .dl-boxz{
+    min-height: 23px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: auto!important;
+}
+.denglu .dl-box .dl-boxz .dl-hide{
+    position: relative;
+    background: #ffebeb;
+    color: #e4393c;
+    border: 1px solid #faccc6;
+    padding: 3px 10px 3px 40px;
+    line-height: 15px;
+    height: auto;
+    display: none;
+}
+.denglu .dl-hide b{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: block;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url(../images/pwd-icons-new.png) -104px -49px no-repeat;
+}
+.denglu .dl-box .dl-boxx .loginname,.loginpassword{
+    border: 1px solid #bdbdbd;
+    height: 38px;
+    width: 304px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.denglu .loginname .loginname2{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(../images/pwd-icons-new.png) no-repeat;
+}
+.denglu .loginname .itext{
+    line-height: 18px;
+    height: 18px;
+    border: 0;
+    padding: 10px 0 10px 50px;
+    width: 254px;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: '\5b8b\4f53';
+}
+.denglu .loginpassword .loginpassword2{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background: url(../images/pwd-icons-new.png) no-repeat;
+}
+.denglu .loginpassword .itext{
+    line-height: 18px;
+    height: 18px;
+    border: 0;
+    padding: 10px 0 10px 50px;
+    width: 254px;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: Tahoma,Helvetica,Arial;
+}
+.denglu .dl-box .wjma{
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 1;
+    height: 18px;
+}
+.denglu .dl-box .wjma .wjman{
+    position: relative;
+    color: #666;
+}
+.wjma .wjman .ww{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.wjma .wjman .ww a:hover{
+    color: #E4393C;
+    text-decoration: underline;
+}
+.denglu .dl-button{
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+.denglu .dl-button .dl-btn{
+    border: 1px solid #cb2a2d;
+    margin: 0 auto;
+    height: 32px;
+    width: 99%;
+    position: relative;
+}
+.denglu .dl-btn a{
+    border: 1px solid #e85356;
+    display: block;
+    width: 302px;
+    background: #e4393c;
+    height: 31px;
+    line-height: 31px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Microsoft YaHei';
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.denglu .dl-btn a:hover{
+    text-decoration: none;
+}
+.dl-bottom{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    border-top: 1px solid #f4f4f4;
+    height: auto;
+    background-color: #fcfcfc;
+}
+.dl-bottom .bot{
+    display: block;
+}
+.dl-bottom .bot li{
+    float: left;
+}
+.dl-bottom .bot li a{
+    display: inline-block;
+    position: relative;
+    padding-left: 24px;
+}
+.dl-bottom .bot li a .QQ{
+    width: 19px;
+    height: 18px;
+    display: block;
+    background: url(../images/QQ-weixin.png) no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 16px;
+}
+.dl-bottom .bot li .shu{
+    color: #ccc;
+    padding: 0 10px;
+}
+.dl-bottom .bot li a .WX{
+    width: 19px;
+    height: 18px;
+    display: block;
+    background: url(../images/QQ-weixin.png) -20px 0 no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 16px;
+}
+.dl-bottom .bot .b-last{
+    float: right;
+}
+.dl-bottom .bot .b-last div{
+    color: #b61d1d;
+    font-size: 14px;
+}
+.dl-bottom .bot .b-last a{
+    color: #b61d1d;
+}
+.dl-bottom .bot .b-last a b{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    background: url(../images/pwd-icons-new.png) -104px -75px no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.bottom{
+    width: 990px;
+    margin: 0 auto;
+}
+.btm-nr{
+    padding-bottom: 30px;
+    text-align: center;
+}
+.btm-nr .b-s a{
+    margin: 0 10px;
+}
+.btm-nr .b-x{
+    margin: 10px 0;
+}
+/* 扫码 */
+.denglu2 .denglu .saoma{
+    width: 306px;
+    padding: 20px 18px 20px 20px;
+    text-align: center;
+}
+.denglu2 .denglu{
+height: 437.69px;
+right: 200px;
+}
+.denglu2 .denglu .saoma .smss{
+    font-size: 14px;
+    color: #fbfbfb;
+    margin-top: 65px;
+    position: relative;
+    z-index: 1;
+}
+.denglu2 .denglu .saoma .sms{
+    position: relative;
+    height: 168px;
+    margin-top: 55px;
+}
+.denglu .saoma .sms .sm-ewm{
+    border: 1px solid #f4f4f4;
+    padding: 8px;
+    width: 155px;
+    position: absolute;
+    left: 64px;
+    transition: all .2s linear;
+}
+.denglu .saoma .sms .sm-ewm a:hover{
+    animation: hhh .4s forwards;
+}
+@keyframes hhh{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 70px;
+    }
+}
+.denglu .saoma .sms .sm-ewm a:hover+.help{
+    display: block;
+}
+.denglu .saoma .sms .sm-ewm .help{
+    position: absolute;
+    display: none;
+    right: -82px;
+    top: -2px;
+    width: 141px;
+    height: 168px;
+    background: url(../images/phone-orange.png) no-repeat;
+    z-index: 99;
+}
+.denglu .saoma .smz{
+    width: 257px;
+    margin: 18px auto 14px;
+    text-align: center;
+}
+.denglu .saoma .smz ul{
+    display: block;
+}
+.denglu .saoma .smz ul li{
+    display: inline-block;
+    padding: 0 0 0 5px;
+    margin: 0 5px 0 0;
+}
+.denglu .saoma .smz ul li a{
+    color: #333;
+    text-decoration: none;
+    margin-left: -3px;
+}
+.denglu .saoma .smz ul li a span{
+    color: #e4393c;
+}
+.denglu .saoma .smx{
+    background-color: #fff;
+    font-family: "microsoft yahei";
+    color: #999;
+    border: none;
+    padding: 0;
+    line-height: 25px;
+    margin-left: 40px;
+    height: auto;
+}
+.smx ul{
+    display: block;
+}
+.smx ul li{
+    text-align: left;
+    position: relative;
+    margin-right: 18px;
+    float: left;
+}
+.smx ul li .b-1{
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url(../images/qr-coagent.png) no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+}
+.smx ul li .b-2{
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url(../images/qr-coagent.png) -27px no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+}
+.smx ul li .b-3{
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url(../images/qr-coagent.png) -54px no-repeat;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+}
+.smx ul li em{
+    padding-left: 32px;
+    font-style: normal;
+}
+
+
+
+
+
+
+.clearfix::before {
+    content: "";
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}

@@ -1,0 +1,8 @@
+body{
+    width: 100%;
+}
+.title{
+    background-color: blue;
+    height: 50px;
+    width: 2000px;
+}

@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+/* 顶部栏开始 */
+.top{
+    position: relative;
+    height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    background: #333;
+}
+.container{
+    width: 1226px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.top .top_list{
+    position: relative;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.top .top_list .ddddd:hover .download{
+    height: 148px;
+}
+.top .top_list .download{
+    position: absolute;
+    top: 40px;
+    left: 83.5%;
+    width: 124px;
+    z-index: 2;
+    height: 0;
+    background: #fff;
+    margin-left: -55px;
+    -webkit-box-shadow: #aaa 0 1px 5px;
+    box-shadow: 0 1px 5px #aaa;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    overflow: hidden;
+    -webkit-transition: height .3s;
+    transition: height .3s;
+}
+.top .top_list .download img{
+    display: block;
+    margin: 18px auto 12px;
+    width: 90px;
+    height: 90px;
+}
+.top .shop{
+    position: relative;
+    float: right;
+    width: 120px;
+    margin-left: 15px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #424242;
+}
+.top .shop a:hover{
+    color: #FF6700;
+    background-color: #fff;
+}
+.top .shop a:hover+.shop-menu{
+    height: 100px;
+}
+.top .shop .shop-menu{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 31;
+    width: 316px;
+    height: 0;
+    color: #424242;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+    box-shadow: 0 2px 10px rgb(0 0 0 / 15%);
+    overflow: hidden;
+    transition: height .3s;
+}
+.top .shop .shop-menu .text{
+    padding: 30px 0 40px;
+}
+.top .login{
+    float: right;
+}
+.top .login .message{
+    padding: 0 10px;
+}
+.top a {
+    color: #b0b0b0;
+    line-height: 40px;
+    display: inline-block;
+}
+.top .shop a{
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+}
+.top a:hover {
+    color:#FFF;
+}
+.top .span1{
+    margin: 0 .3em;
+    color: #424242;
+    font-family: sans-serif;
+}
+.top .span2{
+    margin: 0;
+    color: #424242;
+}
+
+/* 顶部栏结束 */
+
+/* 小米导航栏开始 */
+.header{
+    height: 100px;
+    position: relative;
+}
+.header>.container .logo{
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+
+}     
+.header>.container .logo a{
+    display: block;
+    width: 56px;
+    height: 56px;
+}
+.header .site-list{
+    float: left;
+    width: 770px;
+}    
+.header .site-list>ul {
+    width: 1226px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    list-style-type: none;
+    font-size: 16px;
+}
+.header .site-list .kong{
+    position: relative;
+    float: left;
+    width: 127px;
+    padding-right: 15px;
+}
+.kong .yin{
+    visibility: hidden;
+}
+.header .site-list>ul>li{
+    float: left;
+}
+
+.header .site-list>ul>li>a{
+    display: block;
+    padding: 26px 10px 38px;
+    color: #333;
+}
+.header .site-list>ul>li>a:hover {
+    color:#FF6700;
+}
+.header .site-search{
+    float: right;
+    width: 296px;
+    margin-top: 25px;
+
+}
+.header .site-search form{
+    /* 相对定位 */
+    position: relative;
+    width: 296px;
+    height: 50px;
+}
+.header .site-search form .search-text{
+    margin-left: -1px;
+    width: 245px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    padding: 0 10px;
+    float: left;
+    transition: all .2s;
+}
+.header .site-search form .search-text:hover,.header .site-search form .search-text:hover+.search-btn{
+    border-color:#b0b0b0 ;
+}
+.header .site-search form .search-text:focus,.header .site-search form .search-text:focus+.search-btn{
+    border-color:#ff6700 ;
+}
+.header .site-search form .search-btn{
+    margin-left: -2px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    background-color: #FFF;
+    transition: all .2s;
+}
+.header .site-search form .search-btn:hover{
+    color: #fff;
+    background-color: #ff6700;
+    border: 1px solid #ff6700;
+}
+.header .site-search form .search-word{
+    position: absolute;
+    font-size: 14px;
+    top: 15px;
+    left: 11px;
+
+}
+.header .site-search form .search-word a{
+    color: #757575;
+}  
+/* 搜索框下拉列表 */
+
+.site-search .search-list{
+    position: absolute;
+    left: -0.5px;
+    top: 50px;
+    width: 243px;
+    z-index: 15;
+    border: 1px solid #ff6700;
+    border-top: none;
+    box-sizing: border-box;
+    background: #fff;
+    display: none;
+}
+.site-search .search-text:focus~.search-list{
+    display: block;
+}
+.site-search .search-list>ul>li>a{
+    position: relative;
+    display: block;
+    padding: 6px 15px;
+    font-size: 12px;
+    color: #424242;
+}
+.site-search .search-list>ul>li:hover{
+    background: #fafafa;
+}
+/* 小米导航栏结束 */

@@ -1,0 +1,48 @@
+#para1
+{
+    text-align: center;
+    color: red;
+}
+body
+{
+background-image: url(logo_400x200.png);
+background-repeat:no-repeat;
+background-position: right top;
+}
+p.abc
+{
+    text-decoration: overline;
+    font-family:'Times New Roman', Times, serif;
+    border: 5px solid orange;
+}
+div
+{
+    background-color:aqua;
+    width: 300px;
+    border: 20px solid gold;
+    padding: 20px;
+    margin: 20px;
+    
+}
+p.margin
+{
+    background-color: palegreen;
+    margin: 100px 50px;
+}
+img
+{
+    /* position:absolute;
+    left: 0px;
+    top:0px;
+    z-index: -1;
+} */float: right;
+}
+#overflowTest {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    width: 80%;
+    height: 100px;
+    overflow: scroll;
+    border: 1px solid #ccc;
+}

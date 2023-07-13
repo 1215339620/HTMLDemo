@@ -1,0 +1,12 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+.title{
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+}
+.title .main{
+    width: ;
+}
